@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ng-show Directive</title>
+    <script src="angular.min.js"></script>
+    <script src="script6.js"></script>
+</head>
+
+<body ng-app="mainApp" ng-controller='app'>
+    <button ng-click='toggle()'>Toggle Message</button>
+    <div class="message" ng-show="show=='msg1' ">
+        This is my message 1
+    </div>
+    <div class="message" ng-show="show=='msg2'">
+        This is my message 2
+    </div>
+</body>
+
+</html>

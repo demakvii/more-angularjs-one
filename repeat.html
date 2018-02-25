@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+    <title>AngularJS | ng-repeat!</title>
+    <script src="angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-init="myFavLan=[{name:'PHP',extension:'.php'},
+							{name:'JavaScript',extension:'.js'},
+							{name:'Ruby',extension:'.rb'},{name:'C++',extension:'.cpp'}]">
+    </div>
+    <p ng-repeat="language in myFavLan">
+        Name:{{ language.name}}
+        <br> Extension :{{ language.extension}}
+        <br>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJS | Filters!</title>
+    <script src="angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    Your Name :
+    <input type="text" ng-model="name">
+    <br> Welcome {{name | uppercase}}
+    <br> Welcome {{name | lowercase}}
+    <br> Welcome {{name | uppercase}}
+    <br> {{name | currency:'Rs '}}
+    <br> {{name | currency:'Rs ':0}}
+    <br> {{name | currency:'Rs ':5}}
+    <br> {{name | number:5}}
+    <script></script>
+</body>
+
+</html>
